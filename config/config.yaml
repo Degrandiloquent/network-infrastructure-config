@@ -1,0 +1,88 @@
+# Network Device Configuration
+# Edit this file with your actual network device details
+
+devices:
+  - name: "Core Router"
+    ip: "192.168.1.1"
+    type: "router"
+    commands:
+      - "interface GigabitEthernet0/0"
+      - "ip address 192.168.1.1 255.255.255.0"
+      - "no shutdown"
+  
+  - name: "Access Switch"
+    ip: "192.168.1.2"
+    type: "switch"
+    commands:
+      - "vlan 10"
+      - "name DATA"
+      - "vlan 20"
+      - "name VOICE"
+
+monitoring:
+  interval: 60  # seconds
+  alert_threshold: 3  # number of failed checks before alert
+  
+logging:
+  level: "INFO"
+  directory: "logs"
+```
+
+4. Commit message: `Add configuration file template`
+5. Click **"Commit new file"**
+
+---
+
+## **STEP 5: Create Additional Files**
+
+### **5.1: Create .gitignore** (if not already there)
+
+1. Click **"Add file"** → **"Create new file"**
+2. Name it: `.gitignore`
+3. Paste this:
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+config/secrets.yaml
