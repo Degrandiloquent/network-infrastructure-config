@@ -104,8 +104,8 @@ This project is MIT licensed.
 
 **Dyphe Xihluke Chauke**
 - GitHub: [@Degrandiloquent](https://github.com/Degrandiloquent)
-- Email: dyphebaluyi@gmail.com
-- LinkedIn: [Connect with me on LinkedIn]
+- Email: dyphebaloyi@gmail.com
+- LinkedIn: Dyphe Xihluke Chauke
 
 ---
 
